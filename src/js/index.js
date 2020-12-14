@@ -10,6 +10,22 @@ import "../styles/index.scss";
 
 //import your own components
 import { Home } from "./component/home.js";
+var currentLight = "";
+function runLight() {
+	if (currentLight == "green") {
+		currentLight = "yellow";
+	} else if (currentLight == "yellow") {
+		currentLight = "red";
+	} else {
+		currentLight = "green";
+	}
+
+	ReactDOM.render(
+		<Home currentLight={currentLight} />,
+		document.querySelector("#app")
+	);
+}
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+setInterval(runLight, 3000);
