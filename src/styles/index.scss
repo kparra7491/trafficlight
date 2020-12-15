@@ -41,7 +41,6 @@ html{
   position: absolute;
   top: 20px;
   left: 35px;
-  animation: 13s red infinite;
   border: dotted 2px red;
   box-shadow: 
     0 0 20px #111 inset,
@@ -60,8 +59,7 @@ html{
   position: absolute;
   top: 145px;
   left: 35px;
-  animation: 13s yellow infinite;
-  box-shadow: 
+ box-shadow: 
     0 0 20px #111 inset,
     0 0 10px yellow;
      opacity : 0.3;
@@ -81,7 +79,7 @@ html{
   box-shadow: 
     0 0 20px #111 inset,
     0 0 10px lime;
-  animation: 13s green infinite;
+
   opacity : 0.3;
 }
 

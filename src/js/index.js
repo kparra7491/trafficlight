@@ -11,6 +11,7 @@ import "../styles/index.scss";
 //import your own components
 import { Home } from "./component/home.js";
 var currentLight = "";
+
 function runLight() {
 	if (currentLight == "green") {
 		currentLight = "yellow";
